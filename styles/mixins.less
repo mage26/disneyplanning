@@ -1,0 +1,46 @@
+@red: #9f0007;
+@tablet-breakpoint: 767px;
+
+.query(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+
+.tablet(@rules){
+   @media only screen and (max-width: @tablet-breakpoint) {
+        @rules();
+    }
+} 
+
+.translate(@left, @top) {
+	transform: translate(@left, @top);
+}
+ 
+
+
+.magic-kingdom() {
+	background-image: url('../assets/magic-kingdom.png');
+}
+.epcot() {
+	background-image: url('../assets/epcot.png');
+}
+.hollywood-studios() {
+	background-image: url('../assets/hollywood-studios.png');
+}
+.animal-kingdom() {
+	background-image: url('../assets/animal-kingdom.png');
+}
+
+.magic-kingdom-white() {
+	background-image: url('../assets/magic-kingdom-white.png');
+}
+.epcot-white() {
+	background-image: url('../assets/epcot-white.png');
+}
+.hollywood-studios-white() {
+	background-image: url('../assets/hollywood-studios-white.png');
+}
+.animal-kingdom-white() {
+	background-image: url('../assets/animal-kingdom-white.png');
+}
